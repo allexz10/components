@@ -1,0 +1,59 @@
+.accordion__section {
+  max-width: 780px;
+  width: 100%;
+  border: 1px solid lightgrey;
+  border-radius: 4px;
+  margin-top: 50px;    
+}
+
+.title__wrapper {
+  display: flex;
+  color: rgb(59, 59, 59);
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px 15px 20px;
+  border: 1px solid transparent;
+  outline: 3px solid transparent;
+  cursor: pointer;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  background-color: #ffffff;
+}
+
+.title__wrapper.active {
+  color: #1f5ed4;
+  outline: 3px solid #809fda;
+  background-color: rgba(90, 154, 236, 0.2);
+  border: 1px solid #b0c7f1;
+  transition: all ease-in-out 0.3s;
+}
+
+.arrow.active {
+  color: #1f5ed4;
+}
+.text__wrapper {
+  padding: 0 20px;
+  border-bottom: 1px solid lightgrey;
+}
+.text {
+  max-height: 0;
+  overflow: hidden;
+  transition: all linear 0.3s;
+  text-align: left;
+  line-height: 22px;
+}
+
+.text__wrapper:last-child {
+  border-bottom: 1px solid transparent;
+}
+.text.show {
+  padding: 20px 0;
+  max-height: 150px;
+  transition: all linear 0.3s;
+}
+
+.arrow {
+  font-weight: 600;
+  font-size: 20px;
+  color: #000000;
+}

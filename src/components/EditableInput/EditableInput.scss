@@ -1,0 +1,97 @@
+.editable__section {
+  max-width: 780px;
+  width: 100%;
+  padding: 15px;
+  height: 200px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border: 3px solid #ececec;
+}
+
+.editable__input {
+  width: 100%;
+  height: 40px;
+  padding: 16px;
+  border-radius: 8px;
+  border: none;
+  outline: 3px solid transparent;
+  text-align: center;
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: #212529;
+  &:disabled {
+    background-color: #ffffff;
+    color: #212529;
+  }
+  &:focus {
+    outline: 3px solid rgba(66, 153, 225, 0.6);
+  }
+}
+
+.buutons__wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.editable__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  cursor: pointer;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  background-color: #e2e8f0;
+  outline: 4px solid transparent;
+  transition: all ease 0.3s;
+}
+
+.editable__button--edit {
+  &:focus,
+  &:hover {
+    outline: 4px solid rgba(66, 153, 225, 0.6);
+  }
+}
+
+.buttons__wrapper {
+  display: none;
+  justify-content: center;
+  width: 100px;
+  &.visible {
+    width: 100%;
+    height: 200px;
+    display: grid;
+    grid-template-columns: repeat(2, 50px);
+  }
+}
+
+.button__edit--image {
+  position: relative;
+  bottom: 1px;
+  width: 25px;
+  height: 20px;
+  object-fit: cover;
+  fill: #1d5fd1;
+  padding-left: 5px;
+}
+
+.button__ok--image {
+  position: relative;
+}
+
+.button__cancel--image {
+  width: 12px;
+  height: 12px;
+  object-fit: contain;
+}
+
+.editable__button--cancel {
+  font-size: 18px;
+  font-weight: 500;
+}

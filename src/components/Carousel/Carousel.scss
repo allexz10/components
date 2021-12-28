@@ -1,0 +1,90 @@
+.carousel__section {
+  max-width: 780px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.carousel {
+  position: relative;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.slide {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  color: #f8f9fa;
+  transition: all ease 0.5s;
+  &.active {
+    display: inline-flex;
+  }
+  &__title {
+    font-weight: 500;
+    font-size: 52px;
+    margin-bottom: 46px;
+  }
+  &__subtitle {
+    font-weight: 400;
+    font-size: 28px;
+    margin-bottom: 8px;
+  }
+  &__text {
+    font-size: 18px;
+  }
+}
+
+.dots__wrapper {
+  position: absolute;
+  bottom: 20px;
+  display: flex;
+  width: 96px;
+  justify-content: space-between;
+}
+
+.dot {
+  width: 28px;
+  height: 3px;
+  background-color: #6c757d;
+  cursor: pointer;
+  transition: all ease 0.5s;
+  &.active {
+    background-color: #f8f9fa;
+  }
+}
+
+.prev__button {
+  position: absolute;
+  padding: 210px 30px;
+  top: 40px;
+  left: 10px;
+  color: #6c757d;
+  cursor: pointer;
+  user-select: none;
+  z-index: 2;
+  transition: all ease 0.3s;
+  &:hover {
+    color: #a7aeb4;
+  }
+}
+
+.next__button {
+  position: absolute;
+  padding: 210px 30px;
+  top: 40px;
+  right: 10px;
+  color: #6c757d;
+  cursor: pointer;
+  user-select: none;
+  z-index: 2;
+  transition: all ease 0.3s;
+  &:hover {
+    color: #a7aeb4;
+  }
+}
