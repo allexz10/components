@@ -1,8 +1,17 @@
 # Components
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app)
-## All you need is to select a component and add it to your project
-#### • Accordion • Tooltip • Tabs • Rating • ToggleButton • Switch • Editable • Dropdown • Slider
+### All you need is to select a component and add it to your project
+
+#### • Accordion 
+#### • Tooltip 
+#### • Tabs 
+#### • Rating
+#### • ToggleButton
+#### • Switch
+#### • Editable
+#### • Dropdown
+#### • Slider
 
 
 ![Header](https://github.com/allexz10/allexz10/blob/main/assets/React-App-Google-Chrome-2021-12-28-16-14-47.gif)
